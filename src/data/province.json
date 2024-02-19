@@ -1,0 +1,282 @@
+[
+    {
+        "nama": "ACEH",
+        "id": 100054,
+        "kode": "11",
+        "tingkat": 1,
+        "latitude": 4.6951,
+        "longitude": 96.7494
+    },
+    {
+        "nama": "BALI",
+        "id": 191103,
+        "kode": "51",
+        "tingkat": 1,
+        "latitude": -8.3405,
+        "longitude": 115.0920
+    },
+    {
+        "nama": "BANTEN",
+        "id": 191100,
+        "kode": "36",
+        "tingkat": 1,
+        "latitude": -6.405817,
+        "longitude": 106.064018
+    },
+    {
+        "nama": "BENGKULU",
+        "id": 191092,
+        "kode": "17",
+        "tingkat": 1,
+        "latitude": -3.792845,
+        "longitude": 102.260764
+    },
+    {
+        "nama": "YOGYAKARTA",
+        "id": 191098,
+        "kode": "34",
+        "tingkat": 1,
+        "latitude": -7.7956,
+        "longitude": 110.3695
+    },
+    {
+        "nama": "DKI JAKARTA",
+        "id": 191095,
+        "kode": "31",
+        "tingkat": 1,
+        "latitude": -6.2088,
+        "longitude": 106.8456
+    },
+    {
+        "nama": "GORONTALO",
+        "id": 191053,
+        "kode": "75",
+        "tingkat": 1,
+        "latitude": 0.5448,
+        "longitude": 123.0568
+    },
+    {
+        "nama": "JAMBI",
+        "id": 191089,
+        "kode": "15",
+        "tingkat": 1,
+        "latitude": -1.610123,
+        "longitude": 103.613120
+    },
+    {
+        "nama": "JAWA BARAT",
+        "id": 191096,
+        "kode": "32",
+        "tingkat": 1,
+        "latitude": -6.9204,
+        "longitude": 107.6063
+    },
+    {
+        "nama": "JAWA TENGAH",
+        "id": 191097,
+        "kode": "33",
+        "tingkat": 1,
+        "latitude": -7.150975,
+        "longitude": 110.140259
+    },
+    {
+        "nama": "JAWA TIMUR",
+        "id": 191099,
+        "kode": "35",
+        "tingkat": 1,
+        "latitude": -7.536064,
+        "longitude": 112.238402
+    },
+    {
+        "nama": "KALIMANTAN BARAT",
+        "id": 191101,
+        "kode": "61",
+        "tingkat": 1,
+        "latitude": -0.278781,
+        "longitude": 109.399737
+    },
+    {
+        "nama": "KALIMANTAN SELATAN",
+        "id": 191106,
+        "kode": "63",
+        "tingkat": 1,
+        "latitude": -3.092642,
+        "longitude": 115.283759
+    },
+    {
+        "nama": "KALIMANTAN TENGAH",
+        "id": 191102,
+        "kode": "62",
+        "tingkat": 1,
+        "latitude": -2.210284,
+        "longitude": 113.926064
+    },
+    {
+        "nama": "KALIMANTAN TIMUR",
+        "id": 191107,
+        "kode": "64",
+        "tingkat": 1,
+        "latitude": 0.538,
+        "longitude": 116.4194
+    },
+    {
+        "nama": "KALIMANTAN UTARA",
+        "id": 191108,
+        "kode": "65",
+        "tingkat": 1,
+        "latitude": 2.725138,
+        "longitude": 116.911
+    },
+    {
+        "nama": "BANGKA BELITUNG",
+        "id": 191094,
+        "kode": "19",
+        "tingkat": 1,
+        "latitude": -2.741051,
+        "longitude": 106.440587
+    },
+    {
+        "nama": "KEPULAUAN RIAU",
+        "id": 191091,
+        "kode": "21",
+        "tingkat": 1,
+        "latitude": 3.945651,
+        "longitude": 108.142867
+    },
+    {
+        "nama": "LAMPUNG",
+        "id": 191093,
+        "kode": "18",
+        "tingkat": 1,
+        "latitude": -5.450000,
+        "longitude": 105.266667
+    },
+    {
+        "nama": "Luar Negeri",
+        "id": 200001,
+        "kode": "99",
+        "tingkat": 1,
+        "latitude": 0,
+        "longitude": 0
+    },
+    {
+        "nama": "MALUKU",
+        "id": 191115,
+        "kode": "81",
+        "tingkat": 1,
+        "latitude": -3.238461,
+        "longitude": 130.145273
+    },
+    {
+        "nama": "MALUKU UTARA",
+        "id": 191116,
+        "kode": "82",
+        "tingkat": 1,
+        "latitude": 1.570999,
+        "longitude": 127.808769
+    },
+    {
+        "nama": "NUSA TENGGARA BARAT",
+        "id": 191104,
+        "kode": "52",
+        "tingkat": 1,
+        "latitude": -8.652933,
+        "longitude": 117.361648
+    },
+    {
+        "nama": "NUSA TENGGARA TIMUR",
+        "id": 191105,
+        "kode": "53",
+        "tingkat": 1,
+        "latitude": -8.657382,
+        "longitude": 121.079370
+    },
+    {
+        "nama": "PAPUA",
+        "id": 191117,
+        "kode": "91",
+        "tingkat": 1,
+        "latitude": -4.269928,
+        "longitude": 138.080353
+    },
+    {
+        "nama": "PAPUA BARAT",
+        "id": 191118,
+        "kode": "92",
+        "tingkat": 1,
+        "latitude": -1.336115,
+        "longitude": 133.174716
+    },
+    {
+        "nama": "RIAU",
+        "id": 191090,
+        "kode": "14",
+        "tingkat": 1,
+        "latitude": 0.293347,
+        "longitude": 101.706829
+    },
+    {
+        "nama": "SULAWESI BARAT",
+        "id": 191113,
+        "kode": "76",
+        "tingkat": 1,
+        "latitude": -2.844137,
+        "longitude": 119.232078
+    },
+    {
+        "nama": "SULAWESI SELATAN",
+        "id": 191109,
+        "kode": "73",
+        "tingkat": 1,
+        "latitude": -3.668799,
+        "longitude": 119.974053
+    },
+    {
+        "nama": "SULAWESI TENGAH",
+        "id": 191110,
+        "kode": "72",
+        "tingkat": 1,
+        "latitude": -1.430025,
+        "longitude": 121.445618
+    },
+    {
+        "nama": "SULAWESI TENGGARA",
+        "id": 191111,
+        "kode": "74",
+        "tingkat": 1,
+        "latitude": -4.144910,
+        "longitude": 122.174605
+    },
+    {
+        "nama": "SULAWESI UTARA",
+        "id": 191112,
+        "kode": "71",
+        "tingkat": 1,
+        "latitude": 0.624693,
+        "longitude": 123.975002
+    },
+    {
+        "nama": "SUMATERA BARAT",
+        "id": 191087,
+        "kode": "13",
+        "tingkat": 1,
+        "latitude": -0.739939,
+        "longitude": 100.800005
+    },
+    {
+        "nama": "SUMATERA SELATAN",
+        "id": 191088,
+        "kode": "16",
+        "tingkat": 1,
+        "latitude": -3.319437,
+        "longitude": 104.914673
+    },
+    {
+        "nama": "SUMATERA UTARA",
+        "id": 191086,
+        "kode": "12",
+        "tingkat": 1,
+        "latitude": 2.115355,
+        "longitude": 99.545097
+    }
+]
