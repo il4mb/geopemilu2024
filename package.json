@@ -1,6 +1,7 @@
 {
   "name": "geopemilu2024",
   "version": "0.1.0",
+  "homepage": "https://il4mb.github.io/geopemilu2024",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.17.0",
@@ -23,6 +24,8 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
@@ -47,6 +50,7 @@
     ]
   },
   "devDependencies": {
-    "@types/plotly.js-dist-min": "^2.3.4"
+    "@types/plotly.js-dist-min": "^2.3.4",
+    "gh-pages": "^6.1.1"
   }
 }
