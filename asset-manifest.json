@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/geopemilu2024/static/css/main.846b11ca.css",
+    "main.js": "/geopemilu2024/static/js/main.043c801d.js",
+    "static/js/453.4f360543.chunk.js": "/geopemilu2024/static/js/453.4f360543.chunk.js",
+    "index.html": "/geopemilu2024/index.html",
+    "main.846b11ca.css.map": "/geopemilu2024/static/css/main.846b11ca.css.map",
+    "main.043c801d.js.map": "/geopemilu2024/static/js/main.043c801d.js.map",
+    "453.4f360543.chunk.js.map": "/geopemilu2024/static/js/453.4f360543.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.846b11ca.css",
+    "static/js/main.043c801d.js"
+  ]
+}
