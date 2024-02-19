@@ -61,7 +61,10 @@ const createAnnotation = (index: number) => {
             type: 'point',
             xValue: (ctx: any) => (indexToMax(index) + indexToMin(index)) / 2, // Assuming this averages to the correct x position
             yValue: (ctx: any) => middleValue(ctx, index, 0.5),
-            radius: 10,
+            radius: (() => {
+                if (isMobileDevice()) return 5;
+                return 10
+            }),
         },
         {
             type: 'label',
@@ -73,20 +76,47 @@ const createAnnotation = (index: number) => {
                 }
                 return "";
             },
+            font: {
+                size: (() => {
+                    if (isMobileDevice()) return 7;
+                    return 12;
+                })
+            },
             width: 100,
             height: 1000,
-            xValue: (ctx: any) => (indexToMax(index) + indexToMin(index)) / 2,
+            xValue: () => (indexToMax(index) + indexToMin(index)) / 2,
             yValue: (ctx: any) => middleValue(ctx, index, 0.5),
-            xAdjust: (ctx: any) => {
-                return -150;
+            xAdjust: () => {
+
+                let w = window.screen.width;
+                if (w < 768) {
+                    if (index === 0) return -25;
+                    return 25;
+                }
+                if (w < 1024) {
+                    if (index === 0) return -75;
+                    return 75;
+                }
+                if (index === 0) return -150;
+                return 150;
             },
-            yAdjust: -(100 * ((index + 1) / 2)),
+
+            yAdjust: (() => {
+                if (isMobileDevice()) return -50;
+                return -150;
+            }),
             borderWidth: 1,
             borderDash: [6, 6],
             callout: {
                 display: true,
                 position: (ctx: any) => {
-                    return 'right';
+                    let w = window.screen.width;
+                    if (w < 1024) {
+                        return "bottom";
+                    }
+
+                    if (index === 0) return 'right';
+                    return 'left';
                 },
             }
         }
@@ -114,38 +144,38 @@ const BarChart = (arg: IBar) => {
                 maintainAspectRatio: true,
                 aspectRatio: (() => {
                     let w = window.screen.width;
-                    if (w < 768) return 1.5;
+                    if (w < 768) return 1;
                     return 1.5;
                 })(),
                 layout: {
                     padding: {
                         top: (() => {
                             let w = window.screen.width;
-                            if (w < 768) return 25;
+                            if (w < 768) return 50;
                             if (w < 1024) return 50;
-                            if(w < 1280) return 75;
+                            if (w < 1280) return 75;
                             return 100;
                         })(),
 
                         bottom: (() => {
                             let w = window.screen.width;
-                            if (w < 768) return 25;
+                            if (w < 768) return 50;
                             if (w < 1024) return 50;
-                            if(w < 1280) return 75;
+                            if (w < 1280) return 75;
                             return 100;
                         })(),
                         right: (() => {
                             let w = window.screen.width;
-                            if (w < 768) return 50;
+                            if (w < 768) return 75;
                             if (w < 1024) return 100;
-                            if(w < 1280) return 200;
+                            if (w < 1280) return 200;
                             return 300;
                         })(),
                         left: (() => {
                             let w = window.screen.width;
-                            if (w < 768) return 50;
+                            if (w < 768) return 75;
                             if (w < 1024) return 100;
-                            if(w < 1280) return 200;
+                            if (w < 1280) return 200;
                             return 300;
                         })(),
                     }
@@ -159,6 +189,11 @@ const BarChart = (arg: IBar) => {
                         display: false
                     },
                     datalabels: {
+                        display: (() => {
+                            let w = window.screen.width;
+                            if (w < 1024) return false;
+                            return true;
+                        }),
                         color: '#000',
                         font: {
                             weight: 'bold',

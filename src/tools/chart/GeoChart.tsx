@@ -1,25 +1,11 @@
-import { useEffect, useRef, useState }
+import { useEffect, useRef }
     from "react";
 
 import {
-    Chart as ChartJS, CategoryScale,
-    Tooltip,
-    Title,
-    Legend
+    Chart as ChartJS
 }
     from 'chart.js/auto';
 
-import { topojson, ChoroplethController, ProjectionScale, ColorScale, GeoFeature, BubbleMapController, SizeScale }
-    from 'chartjs-chart-geo';
-
-import zoomPlugin
-    from 'chartjs-plugin-zoom';
-
-import idn
-    from '../../data/idn.topo.json';
-
-import provinces
-    from '../../data/province.json';
 
 
 interface IGeo {
@@ -96,21 +82,6 @@ const options: any = {
         },
     },
 }
-
-
-
-
-const changeBackgroundColorPlugin = {
-    // Define the plugin's ID
-    id: 'changeBackgroundColorPlugin',
-
-    // Implement the beforeDatasetsDraw hook
-    beforeDatasetsDraw: function (chart: any, args: any, options: any) {
-
-
-    }
-};
-
 
 
 

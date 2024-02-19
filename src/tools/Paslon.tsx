@@ -17,16 +17,13 @@ interface Args {
 const Paslon = (arg: PaslonI) => {
 
     let nomor_urut = arg.nomor_urut < 10 ? `0${arg.nomor_urut}` : arg.nomor_urut;
-    let photo_url = "/img/" + nomor_urut + ".jpg";
 
     return (
         <>
-            <div className="w-full flex items-center justify-start align-middle mb-1">
-
-                <span className="w-[18px] h-[18px] block me-2 rounded-sm" style={{ backgroundColor: arg.warna }}></span>
-                <span className="text-sm font-bold text-blue-400">[{nomor_urut}]</span>
-                <h5 className="ms-3 text-sm text-gray-400 text-center">{arg.nama}</h5>
-
+            <div className="w-full flex items-start justify-start mb-1">
+                <span className="w-full h-full min-w-[15px] min-h-[15px] max-w-[15px] max-h-[15px] block me-2 rounded-sm" style={{ backgroundColor: arg.warna }}></span>
+                <span className="text-[10px] lg:text-sm font-bold text-blue-400">[{nomor_urut}]</span>
+                <h5 className="text-[10px] lg:text-sm ms-3 text-gray-400">{arg.nama}</h5>
             </div>
         </>
     )

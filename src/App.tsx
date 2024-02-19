@@ -1,5 +1,6 @@
 import './App.css';
 import { MapChart } from './tools/MapChart';
+import spinner from "./data/img/spinner.svg";
 
 function App() {
   return (
@@ -12,10 +13,16 @@ function App() {
           </div>
         </div>
       </nav>
-      <div className="container p-3">
-
+      <div className="container p-3 mx-auto">
         <MapChart />
-      </div></>
+      </div>
+      <div id='loader' className='fixed w-full h-full flex items-center justify-center backdrop-blur-sm top-0 left-0'>
+        <div className='w-[30px] h-[30px]'>
+          <img src={spinner} className="w-full h-full" />
+          </div>
+        <span className='ms-2'>Loading...</span>
+      </div>
+    </>
   );
 }
 
