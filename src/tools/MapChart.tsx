@@ -161,8 +161,11 @@ const MapChart = () => {
                                 setBarData(createBarDataset(json, data.chart) as any);
                                 setPersen(data.chart.persen);
                                 setDescription("Aplikasi ini mengunakan data langsung dari website <a target='_blank' class='text-blue-500' href='https://pemilu2024.kpu.go.id/'>pemilu2024.kpu.go.id</a>");
-                                document.body.classList.add("loaded");
-                                document.getElementById("loader")?.classList.add("hidden");
+
+                                setTimeout(() => {
+                                    document.body.classList.add("loaded");
+                                    document.getElementById("loader")?.classList.add("hidden");
+                                }, 2000);
                             });
                     });
             });
